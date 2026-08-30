@@ -1,0 +1,4 @@
+]633;E;echo "=== PERMISSOES ===";a2564ab7-9e2b-4b74-a0f0-aa87c9d4a94a]633;C=== PERMISSOES ===
+---------- 1 codespace codespace 32 Aug 30 13:57 laboratorio/bryan-oliveira/segredo.txt
+=== TENTATIVA DE LEITURA ===
+cat: laboratorio/bryan-oliveira/segredo.txt: Permission denied
