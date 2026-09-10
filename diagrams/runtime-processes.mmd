@@ -1,0 +1,15 @@
+flowchart LR
+ U[Usuário] --> WEB[Interface]
+ subgraph H[Host / VM / Container Host - Linux]
+ WEB --> API[Processo: API]
+ API --> WK[Processo: Worker]
+ API --> DB[(Serviço: Banco)]
+ API --> FS[(Filesystem / Volume)]
+ API --> OBS[Agent / Logs / Métricas]
+ end
+ API --> EXT[Sistema Externo]
+ %% Anote no texto do docs/04-processos.md:
+ %% - como cada processo inicia
+ %% - perfil CPU/I/O
+ %% - falha e restart
+ %% - logs/healthcheck
