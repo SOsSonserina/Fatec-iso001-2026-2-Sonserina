@@ -1,0 +1,4 @@
+=== PID / PPID / ESTADO ===
+    PID    PPID STAT  NI COMMAND
+   8076    3805 S      0 sleep
+=== /proc/8076/status ===

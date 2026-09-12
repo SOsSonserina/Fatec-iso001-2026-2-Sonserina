@@ -1,0 +1,16 @@
+# Aula 03 - Reflexão individual
+## 1. Ambiente
+Kernel observado: 6.8.0-1052-azure
+Memória disponível: 5.7Gi
+Uma informação que me chamou atenção: A quantidade total da memória total, achei que fosse maior.
+## 2. Processo
+PID observado: 13597
+PPID observado: 8213
+Explique com suas palavras a diferença entre programa e processo: Programa é um conjunto de instruções armazenado no computador. Processo é quando esse programa está sendo executado pelo sistema operacional.
+## 3. Proteção
+Quem negou a leitura do arquivo e por quê? O kernel do sistema operacional negou a leitura porque o arquivo estava sem a permissão de leitura.
+## 4. Projeto da squad
+Escolha UM componente do projeto <Storage>
+Esse componente rodaria como quê? <Processo>
+Se ele falhar, qual impacto de negócio aparece? <Devido ao storage armazenar SO e outros arquivos, a falha dele pode ocasionar na "tela azul" ou até mesmo num possível corrompimento de arquivos.>
+Qual controle deveria existir? <Healthcheck>
