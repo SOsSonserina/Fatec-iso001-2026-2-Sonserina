@@ -1,0 +1,4 @@
+]633;E;echo "=== PERMISSOES ===";981e6a89-544e-4eef-b6a8-d1aa17417f57]633;C=== PERMISSOES ===
+---------- 1 codespace codespace 33 Sep  5 12:21 laboratorio/jordaninandrade/segredo.txt
+=== TENTATIVA DE LEITURA ===
+cat: laboratorio/jordaninandrade/segredo.txt: Permission denied
