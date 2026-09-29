@@ -2,8 +2,7 @@
 ## 1. Process Inventory
 | Componente | Executa como | Iniciado por | Perfil | Recurso crítico | Se morrer... | Controle |
 |---|---|---|---|---|---|---|
-| API | serviço/processo | runtime/systemd/container | I/O-bound | rede/memória | usuários perdem 
-acesso | healthcheck + restart + logs |
+| API | serviço/processo | runtime/systemd/container | I/O-bound | rede/memória | usuários perdem acesso | healthcheck + restart + logs |
 | Banco | serviço/processo | serviço gerenciado/container | I/O-bound | memória/disco | transações 
 falham | backup + monitoramento + restart |
 | Worker | processo/job | scheduler/fila | misto | CPU/memória | tarefas atrasam | retry + timeout + 
