@@ -8,22 +8,22 @@ acesso | healthcheck + restart + logs |
 falham | backup + monitoramento + restart |
 | Worker | processo/job | scheduler/fila | misto | CPU/memória | tarefas atrasam | retry + timeout + 
 logs |
-| <componente real> | ... | ... | ... | ... | ... | ... |
+| Interface | Serviço | Navegador/web server | I/0-bound | Rede | Usuários não conseguem acessar o sistema | Monitoramento + logs |
 ## 2. Ciclo de vida
 Para cada componente, responda:
-- como inicia?
-- como sabemos que está saudável?
-- como encerra de forma normal?
-- como detectamos falha?
-- quem reinicia?
-- quais logs/métricas precisam existir?
+- como inicia? Inicia quando o container ou serviço é executado. 
+- como sabemos que está saudável? Responde às requisições dos usuários.
+- como encerra de forma normal? Finaliza conexões e encerra o processo.
+- como detectamos falha? Erros nos logs ou ausência de resposta.
+- quem reinicia? Runtime, systemd ou container.
+- quais logs/métricas precisam existir? Logs de acesso, erros e tempo de resposta.
 ## 3. Hipótese de falha
-Escolha um processo crítico e descreva:
-1. sintoma para o usuário;
-2. evidência no SO/aplicação;
-3. ação de recuperação;
-4. risco de reiniciar incorretamente.
+Processo crítico: Não é possível finalizar pedidos.
+1. Sintoma para o usuário: Não é possível finalizar pedidos;
+2. Evidência no SO/aplicação: Erros de conexão registrados nos logs;
+3. Ação de recuperação: Reiniciar o serviço e verificar a conectividade;
+4. Risco de reiniciar incorretamente: Perda de transações em andamento.
 ## 4. Decisões da Sprint
-- Decisão 1: ...
-- Decisão 2: ...
-- Dívida técnica: ...
+- Decisão 1: Separar API e banco de dados em componentes distintos;
+- Decisão 2: Utilizar logs para monitoramento da aplicação;
+- Dívida técnica: Definir estratégia completa de backup e recuperação.
