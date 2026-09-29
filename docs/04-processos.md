@@ -3,10 +3,8 @@
 | Componente | Executa como | Iniciado por | Perfil | Recurso crítico | Se morrer... | Controle |
 |---|---|---|---|---|---|---|
 | API | serviço/processo | runtime/systemd/container | I/O-bound | rede/memória | usuários perdem acesso | healthcheck + restart + logs |
-| Banco | serviço/processo | serviço gerenciado/container | I/O-bound | memória/disco | transações 
-falham | backup + monitoramento + restart |
-| Worker | processo/job | scheduler/fila | misto | CPU/memória | tarefas atrasam | retry + timeout + 
-logs |
+| Banco | serviço/processo | serviço gerenciado/container | I/O-bound | memória/disco | transações falham | backup + monitoramento + restart |
+| Worker | processo/job | scheduler/fila | misto | CPU/memória | tarefas atrasam | retry + timeout + logs |
 | Interface | Serviço | Navegador/web server | I/0-bound | Rede | Usuários não conseguem acessar o sistema | Monitoramento + logs |
 ## 2. Ciclo de vida
 Para cada componente, responda:
