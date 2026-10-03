@@ -1,20 +1,46 @@
-# Fatec-iso001-2026-2-Sonserina
+# ISO001 - Projeto da Disciplina
 
 ## Squad
 
-Sonserina
+Nome da squad: Sonserina
 
-## Tema
+Integrantes e papéis:
+- PM: João Vitor Alves da Silva
+- Tech Lead: Bryan de Oliveira
+- Team Member: Cecília Santiago Faria
+- Team Member: Jordani Nascimento Andrade
+- Team Member: Samuel Henrique Germano Oliveira
+- Team Member: Vinícius Vital Silva Lopes
 
-Sistema de restaurante/delivery.
+## Tema escolhido
 
-## Objetivo
+Sistema de restaurante/delivery local voltado para o gerenciamento de pedidos, acompanhamento das operações e atendimento dos clientes, considerando horários de pico, processamento de pedidos e integração com serviços externos.
 
-Desenvolver uma solução para gerenciamento de pedidos de restaurante, considerando conceitos de Sistemas Operacionais como processos, filas, armazenamento, entrada e saída (I/O) e observabilidade.
+## Problema de negócio
 
-## Estrutura do Projeto
 
-- docs/
-- diagrams/
-- backlog/
-- evidencias/
+
+## Componentes previstos
+
+- Interface
+- API
+- Banco de dados
+- Worker
+- Sistema externo de pagamento
+- Logs e monitoramento
+
+## Conceitos de Sistemas Operacionais envolvidos
+
+- Processos
+- Threads
+- Escalonamento
+- Entrada e Saída (I/O)
+- Memória
+- Armazenamento
+- Logs e observabilidade
+
+## Links
+
+- Backlog:
+- Diagramas:
+- Evidências:
